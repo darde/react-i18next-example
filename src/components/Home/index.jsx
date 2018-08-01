@@ -1,16 +1,17 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 import photo from './photo.jpg';
 
-const Home = () => (
+const Home = ({ t }) => (
   <div className='preview'>
-    <h1>Lighthouses</h1>
+    <h1>{t('home.title')}</h1>
     <div className="cover">
       <figure className='center'>
-        <img src={photo} alt="Lighthouse picture"/>
+        <img src={photo} alt={t('home.figure.alt')} />
       </figure>
     </div>
-    <p className='center'>Know the most beautiful lighthouses of the world.</p>
+    <p className='center'>{t('home.content')}</p>
   </div>
 );
 
-export default Home;
+export default translate('common')(Home);

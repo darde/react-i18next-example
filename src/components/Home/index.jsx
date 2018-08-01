@@ -5,7 +5,7 @@ import photo from './photo.jpg';
 const Home = ({ t }) => (
   <div className='preview'>
     <h1>{t('home.title')}</h1>
-    <div className="cover">
+    <div>
       <figure className='center'>
         <img src={photo} alt={t('home.figure.alt')} />
       </figure>

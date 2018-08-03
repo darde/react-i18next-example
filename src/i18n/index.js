@@ -25,7 +25,7 @@ en['en'].lighthouses.peggys = peggysEn;
 
 const options = {
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: 'pt',
 
   debug: true,
 

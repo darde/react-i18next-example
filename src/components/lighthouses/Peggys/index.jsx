@@ -1,17 +1,16 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 import photo from './photo.jpg';
 
-const Peggys = () => (
+const Peggys = ({ t }) => (
   <div className='preview'>
-    <h2>Peggys Point Lighthouse, Canada</h2>
+    <h2>{t('lighthouses.peggys.title')}</h2>
     <figure>
-      <img src={photo} alt="Peggys Point Lighthouse lighthouse photo"/>
-      <figcaption>Photo: Dennis Jarvis</figcaption>
+      <img src={photo} alt={t('lighthouses.peggys.figure.alt')} />
+      <figcaption>{t('lighthouses.peggys.figure.credits')}</figcaption>
     </figure>
-    <p>
-      Perhaps the most famous lighthouse in Canada, the current Peggys Point Lighthouse was first lit in 1915. It marks the eastern entrance of St. Margarets Bay and is one of the most popular tourist attractions in Nova Scotia.
-    </p>
+    <p>{t('lighthouses.peggys.content')}</p>
   </div>
 );
 
-export default Peggys;
+export default translate('common')(Peggys);

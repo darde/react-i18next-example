@@ -1,4 +1,5 @@
 import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import pt from './locales/default.json';
 import en from './locales/default.en.json';
 import homePt from '../components/Home/locales/default.json';
@@ -28,7 +29,7 @@ const options = {
     escapeValue: false, // not needed for react!!
   },
   
-  lng: 'en',
+  // lng: 'en',
 
   debug: true,
 
@@ -48,11 +49,16 @@ const options = {
   defaultNS: 'common',
 
   react: {
-    wait: true,
+    wait: false,
+    bindI18n: 'languageChanged loaded',
+    bindStore: 'added removed',
+    nsMode: 'default'
   },
 };
 
-i18n.init(options);
+i18n
+  .use(LanguageDetector)
+  .init(options);
 
 
 export default i18n;

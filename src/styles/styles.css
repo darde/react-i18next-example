@@ -56,11 +56,45 @@ img {
 }
 
 .toolbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   width: 100%;
   padding: 5px 20px 10px 20px;
   box-sizing: border-box;
   box-shadow: 0 3px 3px rgba(0,0,0,.2);
   background: #06683f;
+}
+
+.language {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.language button {
+  width: 31px;
+  height: 21px;
+  margin-right: 10px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.language button.pt {
+  background: url('../img/pt_flag.jpg') 0 0 no-repeat;
+}
+
+.language button.en {
+  background: url('../img/en_flag.jpg') 0 0 no-repeat;
+}
+
+.language button.active {
+  height: 26px;
+  border-bottom: 5px solid #fff;
 }
 
 .menu {

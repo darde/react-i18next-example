@@ -3256,6 +3256,10 @@ https-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
 
+i18next-browser-languagedetector@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/i18next-browser-languagedetector/-/i18next-browser-languagedetector-2.2.3.tgz#4196a9964b6d51b76254706a267ba746c9ca19de"
+
 i18next@^11.5.0:
   version "11.5.0"
   resolved "https://registry.yarnpkg.com/i18next/-/i18next-11.5.0.tgz#1e8df15d5d7e96b27da964abde6e7367169fb4c1"

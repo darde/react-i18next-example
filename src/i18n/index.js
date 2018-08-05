@@ -1,4 +1,5 @@
 import i18n from 'i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 import { pt, en } from './locales';
 
 const options = {
@@ -26,10 +27,18 @@ const options = {
   defaultNS: 'common',
 
   react: {
-    wait: true,
+    wait: false,
+    bindI18n: 'languageChanged loaded',
+    bindStore: 'added removed',
+    nsMode: 'default'
   },
 };
 
-i18n.init(options);
+i18n
+  .use(LanguageDetector)
+  .init(options)
+  .changeLanguage('pt', (err, t) => {
+    if (err) return console.log('something went wrong loading', err);
+  });
 
 export default i18n;

@@ -9,6 +9,8 @@ const options = {
 
   debug: true,
 
+  lng: 'en',
+
   resources: {
     pt: {
       common: pt['pt-BR'],

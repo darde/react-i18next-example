@@ -9,7 +9,7 @@ const options = {
 
   debug: true,
 
-  lng: 'en',
+  // lng: 'en',
 
   resources: {
     pt: {
@@ -37,7 +37,7 @@ const options = {
 i18n
   .use(LanguageDetector)
   .init(options)
-  .changeLanguage('pt', (err, t) => {
+  .changeLanguage('en', (err, t) => {
     if (err) return console.log('something went wrong loading', err);
   });
 

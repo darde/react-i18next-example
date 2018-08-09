@@ -67,7 +67,7 @@
   color: #333;
 }
 
-@media only screen and (max-device-width: 568px) {
+@media only screen and (max-width: 568px) {
   .toolbar {
     padding: 5px 15px;
   }

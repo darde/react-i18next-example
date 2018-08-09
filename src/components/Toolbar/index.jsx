@@ -2,6 +2,7 @@ import React from 'react';
 import i18next from 'i18next';
 import AppConsumer from '../context/AppConsumer';
 import { lighthouses } from '../../payload';
+import './styles.css';
 
 class Toolbar extends React.Component {
   state = {

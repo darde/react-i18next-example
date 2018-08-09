@@ -55,75 +55,6 @@ img {
   border-top-right-radius: 0;
 }
 
-.toolbar {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  width: 100%;
-  padding: 5px 20px 10px 20px;
-  box-sizing: border-box;
-  box-shadow: 0 3px 3px rgba(0,0,0,.2);
-  background: #06683f;
-}
-
-.language {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-top: 10px;
-}
-
-.language button {
-  width: 31px;
-  height: 21px;
-  margin-right: 10px;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.language button.pt {
-  background: url('../img/pt_flag.jpg') 0 0 no-repeat;
-}
-
-.language button.en {
-  background: url('../img/en_flag.jpg') 0 0 no-repeat;
-}
-
-.language button.active {
-  height: 26px;
-  border-bottom: 5px solid #fff;
-}
-
-.menu {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.menu button {
-  width: 100px;
-  margin-right: 20px;
-  padding: 3px;
-  box-sizing: border-box;
-  background: #e8f2f9;
-  border: 1px solid #fff;
-  cursor: pointer;
-  border-radius: 4px;
-  outline: none;
-  font-size: 14px;
-  color: #06683f;
-}
-
-.menu button.active {
-  background: #fff;
-  color: #333;
-}
-
 .preview {
   padding: 20px;
   box-sizing: border-box;
@@ -136,12 +67,14 @@ img {
 
 .preview figure {
   display: flex;
+  margin: 0;
   flex-flow: column nowrap;
   align-items: center;
 }
 
 .preview figure img {
   margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .preview figure figcaption {
@@ -152,5 +85,17 @@ img {
 .preview p {
   font-size: 16px;
   line-height: 30px;
+}
+
+@media only screen and (max-device-width: 568px) {
+  .preview figure {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .preview figure img {
+    width: 100%;
+  }
 }
 

@@ -2,7 +2,7 @@
 
 This is a simple example of how to _internationalize_ your application. This App uses the [i18next](https://github.com/i18next/i18next) library and its _addon_ [react-i18next](https://github.com/i18next/react-i18next).
 
-You can see a live demo on [https://react-i18next-example.herokuapp.com/](https://react-i18next-example.herokuapp.com/).
+The best way to use this repo is by following my article on Medium [Implementing Internationalization in a front end application](https://medium.com/rd-shipit/internationalizing-a-front-end-application-88f1baae3d82).
 
 ## Usage
 
